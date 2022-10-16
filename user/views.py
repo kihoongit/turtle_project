@@ -13,9 +13,7 @@ def signup(request):
        password = request.POST.get('password')
        passwordcheck = request.POST.get('passwordcheck')
        if password == passwordcheck:
-        print(username,password)
         User.objects.create_user(username=username, password=password)
-
         return redirect('user:login')
 
 def login(request):
