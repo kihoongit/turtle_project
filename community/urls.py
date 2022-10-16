@@ -5,5 +5,5 @@ from community import views
 app_name = 'community'
 
 urlpatterns = [
-    # path('', views.board, name='board'),
+    path('', views.board)
 ]
